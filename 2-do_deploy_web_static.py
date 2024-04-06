@@ -23,7 +23,7 @@ def do_deploy(archive_path):
         name_wex = shlex.split(name_wex)
         name_wex = name_wex[0]
 
-        releases_path = "/data/web_static/releases/{}".format(name_wex)
+        releases_path = "/data/web_static/releases/{}/".format(name_wex)
         tmp_path = "/tmp/{}".format(name)
 
         put(archive_path, '/tmp/')
